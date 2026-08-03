@@ -1,69 +1,67 @@
-<h1 style="color:#003366;">
-    Welcome to DJ Damaal 256
-</h1>
-
-<p style="font-size:20px;">
-    Home of Ugandan Music 🎵🇺🇬
-</p><button onclick="welcome()"
-style="padding:12px; font-size:18px;">
-    Enter DJ Damaal 256
-</button>function welcome(){
-    alert("Welcome to DJ Damaal 256 - Home of Ugandan Music!");
-}<img src="myphoto.jpg" width="250"
-style="border-radius:50%;"><img src="djdamaal.jpg" width="250"
-style="border-radius:50%;"><!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Damba Music</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
 
-<h2>Music Test</h2>
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Music</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+</nav>
 
-<audio controls>
-  <source src="chike_amen.mp3" type="audio/mpeg">
-</audio>
+<header>
+    <img src="images/logo.png" class="logo" alt="DAMBA Logo">
+    <h1 id="flipName">DAMBA</h1>
+    <p>Official Music Website</p>
+</header>
+
+<section class="music">
+
+    <div class="card">
+        <img src="images/cover1.jpg" class="cover" alt="Cover 1">
+        <h2>My Latest Song</h2>
+        <p>Artist: DAMBA</p>
+
+        <audio controls>
+            <source src="music/song.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <a class="download" href="music/song.mp3" download>
+            Download Song
+        </a>
+    </div>
+
+    <div class="card">
+        <img src="images/cover2.jpg" class="cover" alt="Cover 2">
+        <h2>New Release</h2>
+        <p>Artist: DAMBA</p>
+
+        <audio controls>
+            <source src="music/song2.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <a class="download" href="music/song2.mp3" download>
+            Download Song
+        </a>
+    </div>
+
+</section>
+
+<div class="social">
+    <a href="#">TikTok</a>
+    <a href="#">YouTube</a>
+    <a href="#">Facebook</a>
+</div>
+
+<script src="script.js"></script>
 
 </body>
-</html><img src="djdamaal.jpg"><audio controls>
-    <source src="chike_amen.mp3" type="audio/mpeg">
-</audio><h2>Follow DJ Damaal 256</h2>
-
-<p>
-<a href="https://www.facebook.com/" target="_blank">Facebook</a>
-</p>
-
-<p>
-<a href="https://www.instagram.com/" target="_blank">Instagram</a>
-</p>
-
-<p>
-<a href="https://www.tiktok.com/" target="_blank">TikTok</a>
-</p>
-
-<p>
-<a href="https://www.youtube.com/" target="_blank">YouTube</a>
-</p><h2>DJ Damaal 256 Gallery</h2>
-
-<img src="event1.jpg" width="250">
-
-<img src="event2.jpg" width="250">
-
-<img src="event3.jpg" width="250"><h2>Book DJ Damaal 256</h2>
-
-<form>
-
-    <label>Your Name:</label><br>
-    <input type="text" placeholder="dj damaal"><br><br>
-
-    <label>Phone Number:</label><br>
-    <input type="text" placeholder="+256787997991or+256731633057"><br><br>
-
-    <label>Event Type:</label><br>
-    <input type="text" placeholder="Wedding, Party, Club..."><br><br>
-
-    <label>Message:</label><br>
-    <textarea placeholder="Tell me about your event"></textarea><br><br>
-
-    <button type="submit">
-        Send Booking Request
-    </button>
-
-</form><body style="margin:0; font-family:Arial; background:#add8e6;">
+</html>

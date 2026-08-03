@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #111, #444);
+    color: white;
+    text-align: center;
+}
+
+header {
+    padding: 40px 20px;
+}
+
+#flipName {
+    font-size: 60px;
+    letter-spacing: 8px;
+    animation: flip 2s infinite;
+    color: gold;
+}
+
+@keyframes flip {
+    0% {
+        transform: rotateX(0deg);
+    }
+
+    50% {
+        transform: rotateX(180deg);
+    }
+
+    100% {
+        transform: rotateX(360deg);
+    }
+}
+
+.music {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    background: rgba(255,255,255,0.1);
+    padding: 20px;
+    width: 280px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px gold;
+}
+
+audio {
+    width: 100%;
+}.cover {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+nav {
+    background: black;
+    padding: 15px;
+}
+
+nav a {
+    color: gold;
+    text-decoration: none;
+    margin: 15px;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: white;
+}body {
+    background: linear-gradient(-45deg, #000, #222, #444, #000);
+    background-size: 400% 400%;
+    animation: moveBackground 10s ease infinite;
+}
+
+@keyframes moveBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.social {
+    margin-top: 30px;
+}
+
+.social a {
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 20px;
+    background: gold;
+    color: black;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+}.download {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: gold;
+    color: black;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
